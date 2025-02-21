@@ -75,7 +75,7 @@ const DonationForm = () => {
     try { 
       
       const file = e.target.files[0];
-      const storageRef = ref(storage, `sustainbite_food_images/${file.name}`);
+      const storageRef = ref(storage, `ResQplate_food_images/${file.name}`);
       const uploadTask = uploadBytesResumable(storageRef, file);
   
       uploadTask.on('state_changed', 

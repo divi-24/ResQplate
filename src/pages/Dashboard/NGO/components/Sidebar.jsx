@@ -8,7 +8,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
     }`}>
       <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200">
         {!collapsed && (
-          <span className="text-lg font-semibold text-green-600">SustainBite</span>
+          <span className="text-lg font-semibold text-green-600">ResQplate</span>
         )}
         <button
           onClick={() => setCollapsed(!collapsed)}

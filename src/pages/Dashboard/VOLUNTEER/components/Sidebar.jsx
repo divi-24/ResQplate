@@ -41,7 +41,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, activeTab, setActiveTab }) => {
               <div className="h-8 w-8 rounded-lg bg-emerald-500 flex items-center justify-center">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="font-semibold text-gray-900">SustainBite</span>
+              <span className="font-semibold text-gray-900">ResQplate</span>
             </div>
           )}
           <button

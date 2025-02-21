@@ -36,7 +36,7 @@ const Navbar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 15.9A3.5 3.5 0 0018.5 14h-13A3.5 3.5 0 002 15.9V21h19v-5.1zM16 3.5A3.5 3.5 0 0112.5 0h-1A3.5 3.5 0 008 3.5V7h8V3.5z" />
                 </svg>
                 <Link to="/">
-                <h1 className="text-2xl font-bold text-primary">SustainBite</h1>
+                <h1 className="text-2xl font-bold text-primary">ResQplate</h1>
                 </Link>
               </div>
             </div>

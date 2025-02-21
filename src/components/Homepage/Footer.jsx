@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Brand Identity */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">SustainBite            </h2>
+            <h2 className="text-2xl font-bold">ResQplate            </h2>
             <p className="text-sm text-green-100">Reduce Waste, Feed Lives</p>
             <p className="text-sm mt-4">
               Our mission is to eliminate food waste by connecting donors with those in need
@@ -143,7 +143,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="mt-4">© {new Date().getFullYear()} SustainBite. All rights reserved.</p>
+          <p className="mt-4">© {new Date().getFullYear()} ResQplate. All rights reserved.</p>
         </div>
       </div>
     </footer>

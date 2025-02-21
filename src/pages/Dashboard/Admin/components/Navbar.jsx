@@ -46,7 +46,7 @@ export function Navbar({ setActiveComponent }) {
     <div className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <span className="text-xl font-bold">SustainBite Admin</span>
+          <span className="text-xl font-bold">ResQplate Admin</span>
           <nav className="flex space-x-4">
             {navigation.map((item) => (
               <button

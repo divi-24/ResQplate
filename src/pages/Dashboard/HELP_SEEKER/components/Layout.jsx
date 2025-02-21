@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     <aside className={sidebarClasses}>
       <div className="p-6 flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold gradient-text">SustainBites</h1>
+          <h1 className="text-3xl font-bold gradient-text">ResQplates</h1>
           <p className="text-sm text-gray-500 mt-1">Help Seeker Portal</p>
         </div>
         <button 
