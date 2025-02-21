@@ -8,7 +8,7 @@ function MyDonations() {
       <Navigation />
       <div className="max-w-7xl mx-auto pt-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-orange-800">My Donations</h1>
+        <h1 className="text-3xl font-bold text-#f8a723-800">My Donations</h1>
         <p className="text-gray-600 mt-2">Track and manage all your donations.</p>
       </header>
       <DonationHistory />

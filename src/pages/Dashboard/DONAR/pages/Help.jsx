@@ -23,29 +23,29 @@ function Help() {
    <Navigation />
     <div className="max-w-4xl mx-auto pt-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-orange-800">Help Center</h1>
+        <h1 className="text-3xl font-bold text-#f8a723-800">Help Center</h1>
         <p className="text-gray-600 mt-2">Find answers to common questions and get support.</p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <div className="flex items-center gap-2 mb-4">
-            <MessageCircle className="h-6 w-6 text-orange-600" />
-            <h2 className="text-xl font-semibold text-orange-800">Contact Support</h2>
+            <MessageCircle className="h-6 w-6 text-#f8a723-600" />
+            <h2 className="text-xl font-semibold text-#f8a723-800">Contact Support</h2>
           </div>
           <p className="text-gray-600 mb-4">Need help? Our support team is here for you 24/7.</p>
-          <button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700">
+          <button className="bg-#f8a723-600 text-white px-4 py-2 rounded-lg hover:bg-#f8a723-700">
             Start Chat
           </button>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <div className="flex items-center gap-2 mb-4">
-            <Book className="h-6 w-6 text-orange-600" />
-            <h2 className="text-xl font-semibold text-orange-800">Documentation</h2>
+            <Book className="h-6 w-6 text-#f8a723-600" />
+            <h2 className="text-xl font-semibold text-#f8a723-800">Documentation</h2>
           </div>
           <p className="text-gray-600 mb-4">Browse our detailed documentation and guides.</p>
-          <button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700">
+          <button className="bg-#f8a723-600 text-white px-4 py-2 rounded-lg hover:bg-#f8a723-700">
             View Docs
           </button>
         </div>
@@ -53,13 +53,13 @@ function Help() {
 
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="flex items-center gap-2 mb-6">
-          <HelpCircle className="h-6 w-6 text-orange-600" />
-          <h2 className="text-xl font-semibold text-orange-800">Frequently Asked Questions</h2>
+          <HelpCircle className="h-6 w-6 text-#f8a723-600" />
+          <h2 className="text-xl font-semibold text-#f8a723-800">Frequently Asked Questions</h2>
         </div>
         <div className="space-y-6">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200 pb-4 last:border-0">
-              <h3 className="text-lg font-medium text-orange-800 mb-2">{faq.question}</h3>
+              <h3 className="text-lg font-medium text-#f8a723-800 mb-2">{faq.question}</h3>
               <p className="text-gray-600">{faq.answer}</p>
             </div>
           ))}
@@ -67,12 +67,12 @@ function Help() {
       </div>
 
       <div className="mt-8 bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-semibold text-orange-800 mb-4">Community Guidelines</h2>
-        <div className="prose prose-orange">
+        <h2 className="text-xl font-semibold text-#f8a723-800 mb-4">Community Guidelines</h2>
+        <div className="prose prose-#f8a723">
           <p className="text-gray-600">
             Learn about our community guidelines and best practices for food donation.
           </p>
-          <a href="#" className="flex items-center gap-1 text-orange-600 hover:text-orange-800 mt-2">
+          <a href="#" className="flex items-center gap-1 text-#f8a723-600 hover:text-#f8a723-800 mt-2">
             Read Guidelines
             <ExternalLink className="h-4 w-4" />
           </a>

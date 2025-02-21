@@ -8,15 +8,15 @@ export const StatsCard = ({ title, value, icon: Icon, trend }) => {
           <p className="text-sm text-gray-500">{title}</p>
           <p className="text-2xl font-semibold mt-1">{value}</p>
         </div>
-        <div className="bg-orange-100 p-3 rounded-lg">
-          <Icon className="text-orange-600" size={24} />
+        <div className="bg-#f8a723-100 p-3 rounded-lg">
+          <Icon className="text-#f8a723-600" size={24} />
         </div>
       </div>
       {trend && (
         <div className="mt-2 flex items-center text-sm">
           <span
             className={`${
-              trend.isPositive ? 'text-orange-600' : 'text-red-600'
+              trend.isPositive ? 'text-#f8a723-600' : 'text-red-600'
             }`}
           >
             {trend.isPositive ? '↑' : '↓'} {Math.abs(trend.value)}%

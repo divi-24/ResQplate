@@ -36,24 +36,24 @@ export const Help = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <Book className="text-orange-600" size={24} />
+            <Book className="text-#f8a723-600" size={24} />
             <h2 className="text-lg font-semibold">Quick Start Guide</h2>
           </div>
           <ul className="space-y-3">
             <li className="flex items-center gap-2">
-              <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-sm">1</span>
+              <span className="w-6 h-6 rounded-full bg-#f8a723-100 text-#f8a723-600 flex items-center justify-center text-sm">1</span>
               <span>Review available tasks in the Tasks section</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-sm">2</span>
+              <span className="w-6 h-6 rounded-full bg-#f8a723-100 text-#f8a723-600 flex items-center justify-center text-sm">2</span>
               <span>Accept tasks that match your schedule</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-sm">3</span>
+              <span className="w-6 h-6 rounded-full bg-#f8a723-100 text-#f8a723-600 flex items-center justify-center text-sm">3</span>
               <span>Use the Map for navigation assistance</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-sm">4</span>
+              <span className="w-6 h-6 rounded-full bg-#f8a723-100 text-#f8a723-600 flex items-center justify-center text-sm">4</span>
               <span>Mark tasks as complete after delivery</span>
             </li>
           </ul>
@@ -61,19 +61,19 @@ export const Help = () => {
 
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <MessageCircle className="text-orange-600" size={24} />
+            <MessageCircle className="text-#f8a723-600" size={24} />
             <h2 className="text-lg font-semibold">Contact Support</h2>
           </div>
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Phone className="text-orange-600" size={20} />
+              <Phone className="text-#f8a723-600" size={20} />
               <div>
                 <p className="font-medium">Emergency Helpline</p>
                 <p className="text-sm text-gray-600">1-800-FOOD-HELP</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Mail className="text-orange-600" size={20} />
+              <Mail className="text-#f8a723-600" size={20} />
               <div>
                 <p className="font-medium">Email Support</p>
                 <p className="text-sm text-gray-600">support@foodsaver.org</p>
@@ -86,7 +86,7 @@ export const Help = () => {
       <div className="space-y-6">
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-6">
-            <HelpCircle className="text-orange-600" size={24} />
+            <HelpCircle className="text-#f8a723-600" size={24} />
             <h2 className="text-lg font-semibold">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
@@ -101,7 +101,7 @@ export const Help = () => {
 
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <FileText className="text-orange-600" size={24} />
+            <FileText className="text-#f8a723-600" size={24} />
             <h2 className="text-lg font-semibold">Resources</h2>
           </div>
           <div className="space-y-3">
@@ -110,7 +110,7 @@ export const Help = () => {
               className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
             >
               <div className="flex items-center gap-3">
-                <Book size={20} className="text-orange-600" />
+                <Book size={20} className="text-#f8a723-600" />
                 <span>Volunteer Handbook</span>
               </div>
               <ExternalLink size={16} className="text-gray-400" />
@@ -120,7 +120,7 @@ export const Help = () => {
               className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
             >
               <div className="flex items-center gap-3">
-                <FileText size={20} className="text-orange-600" />
+                <FileText size={20} className="text-#f8a723-600" />
                 <span>Food Safety Guidelines</span>
               </div>
               <ExternalLink size={16} className="text-gray-400" />
@@ -130,7 +130,7 @@ export const Help = () => {
               className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors"
             >
               <div className="flex items-center gap-3">
-                <FileText size={20} className="text-orange-600" />
+                <FileText size={20} className="text-#f8a723-600" />
                 <span>Vehicle Requirements</span>
               </div>
               <ExternalLink size={16} className="text-gray-400" />

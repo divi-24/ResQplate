@@ -100,7 +100,7 @@ const DonationForm = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
-      <h2 className="text-2xl font-bold text-orange-800 mb-6">Make a Donation</h2>
+      <h2 className="text-2xl font-bold text-#f8a723-800 mb-6">Make a Donation</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -108,7 +108,7 @@ const DonationForm = () => {
               Food Type
             </label>
             <select
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-#f8a723-500"
               value={formData.foodType}
               onChange={(e) => setFormData({...formData, foodType: e.target.value})}
             >
@@ -125,7 +125,7 @@ const DonationForm = () => {
             </label>
             <input
               type="number"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-#f8a723-500"
               value={formData.quantity}
               onChange={(e) => setFormData({...formData, quantity: e.target.value})}
             />
@@ -139,7 +139,7 @@ const DonationForm = () => {
               <Clock className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <input
                 type="date"
-                className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-#f8a723-500"
                 value={formData.expirationDate}
                 onChange={(e) => setFormData({...formData, expirationDate: e.target.value})}
               />
@@ -154,7 +154,7 @@ const DonationForm = () => {
               <MapPin className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <input
                 type="text"
-                className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+                className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-#f8a723-500"
                 placeholder="Enter address"
                 value={formData.location}
                 onChange={(e) => setFormData({...formData, location: e.target.value})}
@@ -168,7 +168,7 @@ const DonationForm = () => {
             Special Notes
           </label>
           <textarea
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-#f8a723-500"
             rows={4}
             value={formData.notes}
             onChange={(e) => setFormData({...formData, notes: e.target.value})}
@@ -180,9 +180,9 @@ const DonationForm = () => {
             Food Image
           </label>
           <div className="flex items-center justify-center w-full">
-            <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-orange-300 border-dashed rounded-lg cursor-pointer bg-orange-50 hover:bg-orange-100">
+            <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-#f8a723-300 border-dashed rounded-lg cursor-pointer bg-#f8a723-50 hover:bg-#f8a723-100">
               <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                <Camera className="w-8 h-8 mb-2 text-orange-600" />
+                <Camera className="w-8 h-8 mb-2 text-#f8a723-600" />
                 <p className="text-sm text-gray-500">Click to upload images</p>
               </div>
               <input type="file" className="hidden" accept="image/*" onChange={(e) => {handleFileUpload(e)}} />
@@ -192,7 +192,7 @@ const DonationForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-orange-600 text-white py-3 px-6 rounded-lg hover:bg-orange-700 transition-colors font-medium"
+          className="w-full bg-#f8a723-600 text-white py-3 px-6 rounded-lg hover:bg-#f8a723-700 transition-colors font-medium"
         >
           {loading ? 'Submitting...' : 'Submit Donation'}
         </button>

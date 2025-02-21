@@ -48,7 +48,7 @@ const VolunteerCard = ({ volunteer }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const statusColors = {
-    Available: 'orange',
+    Available: '#f8a723',
     'En Route': 'blue',
     'On Time': 'indigo',
     Delayed: 'yellow'
@@ -114,8 +114,8 @@ const VolunteerCard = ({ volunteer }) => {
               </div>
               
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-orange-50 rounded-lg">
-                  <Clock className="w-5 h-5 text-orange-600" />
+                <div className="p-2 bg-#f8a723-50 rounded-lg">
+                  <Clock className="w-5 h-5 text-#f8a723-600" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">On Time Rate</p>

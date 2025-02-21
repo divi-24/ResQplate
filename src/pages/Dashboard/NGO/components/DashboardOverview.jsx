@@ -45,8 +45,8 @@ function DashboardOverview() {
       value: '18',
       change: '+8.2%',
       icon: Truck,
-      color: 'text-orange-600',
-      bgColor: 'bg-orange-100',
+      color: 'text-#f8a723-600',
+      bgColor: 'bg-#f8a723-100',
     },
     {
       label: 'Active Volunteers',
@@ -106,7 +106,7 @@ function DashboardOverview() {
                       {stat.value}
                     </p>
                     <span className={`ml-2 text-sm font-medium ${
-                      stat.change.startsWith('+') ? 'text-orange-600' : 'text-red-600'
+                      stat.change.startsWith('+') ? 'text-#f8a723-600' : 'text-red-600'
                     }`}>
                       {stat.change}
                     </span>
@@ -144,7 +144,7 @@ function DashboardOverview() {
                     <div>
                       <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
                         donation.status === 'Delivered'
-                          ? 'bg-orange-100 text-orange-800'
+                          ? 'bg-#f8a723-100 text-#f8a723-800'
                           : donation.status === 'In Transit'
                           ? 'bg-yellow-100 text-yellow-800'
                           : 'bg-blue-100 text-blue-800'

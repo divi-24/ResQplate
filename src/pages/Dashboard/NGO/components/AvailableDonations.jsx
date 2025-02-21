@@ -112,7 +112,7 @@ function AvailableDonations() {
               </div>
               
               <div className="pt-4 border-t border-gray-200 space-y-2">
-                <button className="w-full px-4 py-2 bg-orange-600 text-white text-sm font-medium rounded-lg hover:bg-orange-700 transition-colors flex items-center justify-center">
+                <button className="w-full px-4 py-2 bg-#f8a723-600 text-white text-sm font-medium rounded-lg hover:bg-#f8a723-700 transition-colors flex items-center justify-center">
                   <CheckCircle2 className="w-4 h-4 mr-2" />
                   Claim Donation
                 </button>

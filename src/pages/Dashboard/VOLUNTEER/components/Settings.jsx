@@ -10,8 +10,8 @@ export const Settings = () => {
         {/* Profile Settings */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-20 h-20 rounded-full bg-orange-100 flex items-center justify-center">
-              <User size={40} className="text-orange-600" />
+            <div className="w-20 h-20 rounded-full bg-#f8a723-100 flex items-center justify-center">
+              <User size={40} className="text-#f8a723-600" />
             </div>
             <div>
               <h2 className="text-xl font-semibold">Sarah Johnson</h2>
@@ -27,7 +27,7 @@ export const Settings = () => {
               <input
   type="text"
   defaultValue="Sarah Johnson"
-  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
 />
 
             </div>
@@ -38,7 +38,7 @@ export const Settings = () => {
               <input
                 type="email"
                 defaultValue="sarah.j@example.com"
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
               />
             </div>
             <div>
@@ -48,14 +48,14 @@ export const Settings = () => {
               <input
                 type="tel"
                 defaultValue="+1 (555) 123-4567"
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Preferred Language
               </label>
-              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500">
                 <option>English</option>
                 <option>Spanish</option>
                 <option>French</option>
@@ -67,7 +67,7 @@ export const Settings = () => {
         {/* Notification Settings */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <Bell size={20} className="text-orange-600" />
+            <Bell size={20} className="text-#f8a723-600" />
             <h2 className="text-lg font-semibold">Notification Preferences</h2>
           </div>
 
@@ -79,7 +79,7 @@ export const Settings = () => {
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" className="sr-only peer" defaultChecked />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-orange-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-orange-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-#f8a723-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-#f8a723-600"></div>
               </label>
             </div>
 
@@ -90,7 +90,7 @@ export const Settings = () => {
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" className="sr-only peer" defaultChecked />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-orange-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-orange-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-#f8a723-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-#f8a723-600"></div>
               </label>
             </div>
 
@@ -101,7 +101,7 @@ export const Settings = () => {
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" className="sr-only peer" defaultChecked />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-orange-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-orange-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-#f8a723-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-#f8a723-600"></div>
               </label>
             </div>
           </div>
@@ -110,7 +110,7 @@ export const Settings = () => {
         {/* Vehicle Information */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <Car size={20} className="text-orange-600" />
+            <Car size={20} className="text-#f8a723-600" />
             <h2 className="text-lg font-semibold">Vehicle Information</h2>
           </div>
 
@@ -119,7 +119,7 @@ export const Settings = () => {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Vehicle Type
               </label>
-              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500">
                 <option>Car</option>
                 <option>SUV</option>
                 <option>Van</option>
@@ -133,7 +133,7 @@ export const Settings = () => {
               <input
                 type="text"
                 placeholder="Enter license plate"
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
               />
             </div>
           </div>
@@ -142,7 +142,7 @@ export const Settings = () => {
         {/* Location Preferences */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <MapPin size={20} className="text-orange-600" />
+            <MapPin size={20} className="text-#f8a723-600" />
             <h2 className="text-lg font-semibold">Location Preferences</h2>
           </div>
 
@@ -151,7 +151,7 @@ export const Settings = () => {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Preferred Service Area
               </label>
-              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500">
                 <option>Downtown</option>
                 <option>North Side</option>
                 <option>South Side</option>
@@ -163,7 +163,7 @@ export const Settings = () => {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Maximum Travel Distance
               </label>
-              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <select className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500">
                 <option>5 miles</option>
                 <option>10 miles</option>
                 <option>15 miles</option>
@@ -177,7 +177,7 @@ export const Settings = () => {
         {/* Privacy & Security */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <Shield size={20} className="text-orange-600" />
+            <Shield size={20} className="text-#f8a723-600" />
             <h2 className="text-lg font-semibold">Privacy & Security</h2>
           </div>
 
@@ -189,12 +189,12 @@ export const Settings = () => {
               <input
                 type="password"
                 placeholder="Enter new password"
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-2"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500 mb-2"
               />
               <input
                 type="password"
                 placeholder="Confirm new password"
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
               />
             </div>
           </div>
@@ -202,7 +202,7 @@ export const Settings = () => {
 
         {/* Save Button */}
         <div className="flex justify-end">
-          <button className="px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors">
+          <button className="px-6 py-2 bg-#f8a723-600 text-white rounded-lg hover:bg-#f8a723-700 transition-colors">
             Save Changes
           </button>
         </div>

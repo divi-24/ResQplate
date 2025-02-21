@@ -3,10 +3,10 @@ import React from 'react'
 const Partners = () => {
     const partners = {
         restaurants: [
-          "Fine Dining Co.", "orange Kitchen", "Fresh Bites", "Urban Plates", "Food Haven"
+          "Fine Dining Co.", "#f8a723 Kitchen", "Fresh Bites", "Urban Plates", "Food Haven"
         ],
         supermarkets: [
-          "Fresh Market", "Daily Grocers", "orange Foods", "City Market", "Food Plus"
+          "Fresh Market", "Daily Grocers", "#f8a723 Foods", "City Market", "Food Plus"
         ],
         organizations: [
           "Food Bank Network", "Community Help", "Hunger Relief", "Local Impact", "Care Foundation"
