@@ -54,7 +54,7 @@ const Navbar = () => {
           {/* Left side - Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Fork-Plate--Streamline-Sharp" height={40} width={40} ><desc>{"Fork Plate Streamline Icon: https://streamlinehq.com"}</desc><g id="fork-plate--fork-plate-food-dine-cook-utensils-eat-restaurant-dining-kitchenware"><path id="Union" fill="#efa561ab" fillRule="evenodd" d="M22 23c-6.075 0 -11 -4.925 -11 -11S15.925 1 22 1v22ZM1 2v5.5a4.502 4.502 0 0 0 3.25 4.324L4.25 22h2.5l0 -10.176A4.502 4.502 0 0 0 10 7.5V2H8v4.5H6.5l0 -4.5h-2l0 4.5H3V2H1Z" clipRule="evenodd" strokeWidth={1} /><path id="Ellipse 663 (Stroke)" fill="#da932d" fillRule="evenodd" d="M22 6.75a5.25 5.25 0 1 0 0 10.5v1.5a6.75 6.75 0 0 1 0 -13.5v1.5Z" clipRule="evenodd" strokeWidth={1} /></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Fork-Plate--Streamline-Sharp" height={24} width={24} ><desc>{"Fork Plate Streamline Icon: https://streamlinehq.com"}</desc><g id="fork-plate--fork-plate-food-dine-cook-utensils-eat-restaurant-dining-kitchenware"><path id="Union" fill="#22c55e" fillRule="evenodd" d="M11 12c0 6.075 4.925 11 11 11v-4.25a6.75 6.75 0 0 1 0 -13.5V1c-6.075 0 -11 4.925 -11 11Zm5.75 0c0 -2.9 2.35 -5.25 5.25 -5.25v10.5A5.25 5.25 0 0 1 16.75 12ZM1 2v5.5a4.502 4.502 0 0 0 3.25 4.324L4.25 22h2.5l0 -10.176A4.502 4.502 0 0 0 10 7.5V2H8v4.5H6.5l0 -4.5h-2l0 4.5H3V2H1Z" clipRule="evenodd" strokeWidth={1} /></g></svg>
               <h1 className="text-2xl font-bold text-primary">ResQplate</h1>
             </Link>
           </div>
