@@ -8,7 +8,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
     }`}>
       <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200">
         {!collapsed && (
-          <span className="text-lg font-semibold text-green-600">ResQplate</span>
+          <span className="text-lg font-semibold text-orange-600">ResQplate</span>
         )}
         <button
           onClick={() => setCollapsed(!collapsed)}
@@ -27,7 +27,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
               onClick={() => setActiveSection(item.id)}
               className={`w-full flex items-center px-3 py-2 rounded-lg transition-colors ${
                 activeSection === item.id
-                  ? 'bg-green-50 text-green-600'
+                  ? 'bg-orange-50 text-orange-600'
                   : 'text-gray-600 hover:bg-gray-50'
               }`}
             >

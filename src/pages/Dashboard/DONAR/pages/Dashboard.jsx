@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div className="max-w-7xl mx-auto">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-green-800 pt-8">Donor Dashboard</h1>
+        <h1 className="text-3xl font-bold text-orange-800 pt-8">Donor Dashboard</h1>
         <p className="text-gray-600 mt-2">Welcome back! Here's your donation overview.</p>
       </header>
 

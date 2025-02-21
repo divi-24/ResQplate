@@ -39,27 +39,27 @@ useEffect(()=>{
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
-      <h2 className="text-2xl font-bold text-green-800 mb-6">Donation History</h2>
+      <h2 className="text-2xl font-bold text-orange-800 mb-6">Donation History</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full">
           <thead>
-            <tr className="bg-green-50">
-            <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+            <tr className="bg-orange-50">
+            <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Serial No.
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Date
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Food Type
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Quantity
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Organization
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-green-800 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-orange-800 uppercase tracking-wider">
                 Status
               </th>
 
@@ -67,7 +67,7 @@ useEffect(()=>{
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {donations.map((donation, index) => (
-              <tr key={index} className="hover:bg-green-50">
+              <tr key={index} className="hover:bg-orange-50">
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                   {index+1}
                 </td>

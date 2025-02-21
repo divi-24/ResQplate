@@ -17,7 +17,7 @@ export function MetricCard({ metric }) {
       </div>
       <div className="mt-4 flex items-center">
         <span className={`text-sm ${
-          metric.change >= 0 ? 'text-green-600' : 'text-red-600'
+          metric.change >= 0 ? 'text-orange-600' : 'text-red-600'
         }`}>
           {metric.change >= 0 ? '+' : ''}{metric.change}%
         </span>

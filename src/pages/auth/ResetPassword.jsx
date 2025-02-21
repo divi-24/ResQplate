@@ -31,7 +31,7 @@ const ResetPassword = () => {
       case 1: return 'bg-orange-500';
       case 2: return 'bg-yellow-500';
       case 3: return 'bg-blue-500';
-      case 4: return 'bg-green-500';
+      case 4: return 'bg-orange-500';
       default: return 'bg-gray-200';
     }
   };
@@ -87,7 +87,7 @@ const ResetPassword = () => {
     <>
 
       <Navbar />
-      <div className="h-screen flex items-center justify-center bg-gradient-to-br from-green-100 via-green-50 to-green-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="h-screen flex items-center justify-center bg-gradient-to-br from-orange-100 via-orange-50 to-orange-100 py-12 px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -99,8 +99,8 @@ const ResetPassword = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="mx-auto bg-green-100 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-6">
-              <Lock className="h-8 w-8 text-green-600" />
+              className="mx-auto bg-orange-100 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-6">
+              <Lock className="h-8 w-8 text-orange-600" />
             </motion.div>
             <motion.h2
               initial={{ opacity: 0 }}
@@ -206,11 +206,11 @@ const ResetPassword = () => {
               disabled={!password || !confirmPassword || password !== confirmPassword}
               className={`group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white 
                 ${password && confirmPassword && password === confirmPassword 
-                  ? 'bg-green-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500' 
-                  : 'bg-green-400 cursor-not-allowed'}`}
+                  ? 'bg-orange-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500' 
+                  : 'bg-orange-400 cursor-not-allowed'}`}
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                <Lock className="h-5 w-5 text-green-300 group-hover:text-green-200" aria-hidden="true" />
+                <Lock className="h-5 w-5 text-orange-300 group-hover:text-orange-200" aria-hidden="true" />
               </span>
               {loading ? 'Resetting Password...' : 'Reset Password'}
               <ArrowRight className="ml-2 h-5 w-5" />

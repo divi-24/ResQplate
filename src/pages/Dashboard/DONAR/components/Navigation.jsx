@@ -55,8 +55,8 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="bg-green-50 p-2 rounded-lg">
-                <Leaf className="h-6 w-6 text-green-600" />
+              <div className="bg-orange-50 p-2 rounded-lg">
+                <Leaf className="h-6 w-6 text-orange-600" />
               </div>
               <h1 className="text-xl font-semibold text-gray-800">
                 <Link to="/donar/dashboard" className="flex items-center gap-2">
@@ -74,11 +74,11 @@ const Navigation = () => {
                     to={item.path}
                     className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200
                       ${isActive 
-                        ? 'bg-green-50 text-green-600' 
+                        ? 'bg-orange-50 text-orange-600' 
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                       }`}
                   >
-                    <item.icon className={`h-4 w-4 ${isActive ? 'text-green-600' : 'text-gray-500'}`} />
+                    <item.icon className={`h-4 w-4 ${isActive ? 'text-orange-600' : 'text-gray-500'}`} />
                     <span>{item.text}</span>
                   </Link>
                 );
@@ -114,11 +114,11 @@ const Navigation = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-3 py-2 rounded-md text-base font-medium transition-all duration-200
                       ${isActive 
-                        ? 'bg-green-50 text-green-600' 
+                        ? 'bg-orange-50 text-orange-600' 
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                       }`}
                   >
-                    <item.icon className={`h-5 w-5 ${isActive ? 'text-green-600' : 'text-gray-500'}`} />
+                    <item.icon className={`h-5 w-5 ${isActive ? 'text-orange-600' : 'text-gray-500'}`} />
                     <span>{item.text}</span>
                   </Link>
                 );

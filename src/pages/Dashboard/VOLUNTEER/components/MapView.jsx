@@ -37,7 +37,7 @@ export const MapView = () => {
         <div className="lg:col-span-2">
           <div className="bg-white rounded-lg shadow-md p-4 h-[600px] flex items-center justify-center">
             <div className="text-center text-gray-500">
-              <Navigation size={48} className="mx-auto mb-4 text-green-600" />
+              <Navigation size={48} className="mx-auto mb-4 text-orange-600" />
               <p>Map integration will be implemented here</p>
               <p className="text-sm">Using Google Maps or similar service</p>
             </div>
@@ -54,7 +54,7 @@ export const MapView = () => {
                   className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   <div className="mt-1">
-                    <MapPin size={20} className="text-green-600" />
+                    <MapPin size={20} className="text-orange-600" />
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-800">{location.name}</h3>

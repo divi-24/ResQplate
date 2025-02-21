@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Bars3Icon, XMarkIcon, UserCircleIcon, BellIcon } from '@heroicons/react/24/outline';
 import {Link} from 'react-router-dom'
 import {useAuth} from "../../context/AuthContext"
+import { hover } from 'framer-motion';
 
 
 
@@ -17,7 +18,7 @@ const Navbar = () => {
     ]);
   
     const navLinks = [
-      { name: 'Home', href: '/', current: true },
+      { name: 'Home', href: '/', current: false },
       { name: 'Donate Food', href: '/donate-food', current: false },
       { name: 'Find Food', href: '/find-food', current: false },
       { name: 'Volunteer', href: '/volunteer', current: false },
@@ -32,9 +33,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <div className="flex items-center gap-2">
-                <svg className="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {/* <svg className="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 15.9A3.5 3.5 0 0018.5 14h-13A3.5 3.5 0 002 15.9V21h19v-5.1zM16 3.5A3.5 3.5 0 0112.5 0h-1A3.5 3.5 0 008 3.5V7h8V3.5z" />
-                </svg>
+                </svg> */}
                 <Link to="/">
                 <h1 className="text-2xl font-bold text-primary">ResQplate</h1>
                 </Link>
@@ -69,13 +70,13 @@ const Navbar = () => {
               <Link to="/signin">
               {
                 user ? (
-                  <button className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 transition-colors">
+                  <button className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors">
                   <Link to={`/${user.role.toLowerCase()}/dashboard`} >
                   Go to Dashboard
                   </Link>
                 </button>
                 ) : (
-                  <button className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 transition-colors">
+                  <button className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors">
                   Sign In
                 </button>
                 )
@@ -108,7 +109,7 @@ const Navbar = () => {
                 href={link.href}
                 className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
                   link.current
-                    ? 'bg-green-50 border-primary text-primary'
+                    ? 'bg-orange-50 border-primary text-primary'
                     : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'
                 }`}
               >

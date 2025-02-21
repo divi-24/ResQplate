@@ -81,7 +81,7 @@ function PendingDonations() {
               <input
                 type="text"
                 placeholder="Search by food type or location..."
-                className="w-full sm:w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none"
+                className="w-full sm:w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -107,7 +107,7 @@ function PendingDonations() {
                     <div className="flex justify-between">
                       <div>
                         <h3 className="text-xl font-semibold text-gray-900 mb-2">{donation.foodType}</h3>
-                        <div className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full mb-4">
+                        <div className="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full mb-4">
                           {donation.weight} kg available
                         </div>
                       </div>
@@ -127,11 +127,11 @@ function PendingDonations() {
 
                     <div className="flex justify-end gap-4">
                       <button onClick={handleViewDetails(donation._id)}
-                       className="px-4 py-2 text-green-600 hover:text-green-700 font-medium transition-colors duration-200">
+                       className="px-4 py-2 text-orange-600 hover:text-orange-700 font-medium transition-colors duration-200">
                         View Details
                       </button>
                       <button onClick={handleTrackOrder}
-                       className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200">
+                       className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200">
                         Track on Map
                       </button>
                     </div>
@@ -164,7 +164,7 @@ function PendingDonations() {
               className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg"
             >
               <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-bold text-green-800">Donation Details</h2>
+                <h2 className="text-2xl font-bold text-orange-800">Donation Details</h2>
                 <button onClick={() => setIsModelOpen(false)}>
                   <XCircle className="h-6 w-6 text-gray-400" />
                 </button>
@@ -180,7 +180,7 @@ function PendingDonations() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{selectedDonation.foodType}</h3>
-                    <div className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full mb-4">
+                    <div className="inline-block px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full mb-4">
                       {selectedDonation.weight} kg available
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -197,7 +197,7 @@ function PendingDonations() {
                   </div>
                 </div>
                 <div className="flex justify-end gap-4">
-                  <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200">
+                  <button className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200">
                     Track on Map
                   </button>
                 </div>

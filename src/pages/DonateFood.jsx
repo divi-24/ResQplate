@@ -73,12 +73,12 @@ export default function DonateFood() {
         <div className="relative text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-6xl font-bold mb-6 leading-tight">
             Make a Difference,
-            <span className="block text-green-400">One Meal at a Time</span>
+            <span className="block text-orange-400">One Meal at a Time</span>
           </h1>
           <p className="text-2xl mb-12 text-gray-200">Join thousands of donors in our mission to reduce food waste and feed those in need.</p>
           <a 
             href="#donate-form"
-            className="bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
+            className="bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
           >
             <Heart className="w-5 h-5" />
             <span>Start Donating</span>
@@ -110,7 +110,7 @@ export default function DonateFood() {
       <div className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-20 text-gray-800">
-            How It <span className="text-green-600">Works</span>
+            How It <span className="text-orange-600">Works</span>
           </h2>
           <div className="grid md:grid-cols-4 gap-8 relative">
             {[
@@ -125,8 +125,8 @@ export default function DonateFood() {
                   activeStep === index ? 'scale-110' : 'scale-100 opacity-70'
                 }`}
               >
-                <div className={`bg-green-100 w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-6 text-green-600 transform transition-all duration-300 ${
-                  activeStep === index ? 'bg-green-600 text-white scale-110' : ''
+                <div className={`bg-orange-100 w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-6 text-orange-600 transform transition-all duration-300 ${
+                  activeStep === index ? 'bg-orange-600 text-white scale-110' : ''
                 }`}>
                   {step.icon}
                 </div>
@@ -134,7 +134,7 @@ export default function DonateFood() {
                 <p className="text-gray-600">{step.desc}</p>
                 {index < 3 && (
                   <div className="hidden md:block absolute top-1/2 left-0 w-full" style={{ transform: 'translateY(-50%)' }}>
-                    <div className="border-t-2 border-green-200 w-full" style={{ margin: '0 15%' }}></div>
+                    <div className="border-t-2 border-orange-200 w-full" style={{ margin: '0 15%' }}></div>
                   </div>
                 )}
               </div>
@@ -159,7 +159,7 @@ export default function DonateFood() {
                     <label className="block text-gray-700 font-medium mb-2">Food Type</label>
                     <div className="relative group">
                       <select 
-                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 group-hover:border-green-300"
+                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 group-hover:border-orange-300"
                         value={formData.foodType}
                         onChange={(e) => setFormData({...formData, foodType: e.target.value})}
                       >
@@ -167,7 +167,7 @@ export default function DonateFood() {
                         <option value="veg">Vegetarian</option>
                         <option value="non-veg">Non-Vegetarian</option>
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-green-500 transition-colors duration-300" />
+                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-orange-500 transition-colors duration-300" />
                     </div>
                   </div>
 
@@ -175,7 +175,7 @@ export default function DonateFood() {
                     <label className="block text-gray-700 font-medium mb-2">Category</label>
                     <div className="relative group">
                       <select 
-                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 group-hover:border-green-300"
+                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 group-hover:border-orange-300"
                         value={formData.category}
                         onChange={(e) => setFormData({...formData, category: e.target.value})}
                       >
@@ -183,7 +183,7 @@ export default function DonateFood() {
                         <option value="perishable">Perishable</option>
                         <option value="non-perishable">Non-Perishable</option>
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-green-500 transition-colors duration-300" />
+                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-orange-500 transition-colors duration-300" />
                     </div>
                   </div>
 
@@ -191,7 +191,7 @@ export default function DonateFood() {
                     <label className="block text-gray-700 font-medium mb-2">Quantity (in kg)</label>
                     <input 
                       type="number"
-                      className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 hover:border-green-300"
+                      className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 hover:border-orange-300"
                       value={formData.quantity}
                       onChange={(e) => setFormData({...formData, quantity: e.target.value})}
                       placeholder="Enter quantity"
@@ -203,10 +203,10 @@ export default function DonateFood() {
                   <div>
                     <label className="block text-gray-700 font-medium mb-2">Pickup Address</label>
                     <div className="relative group">
-                      <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-green-500 transition-colors duration-300" />
+                      <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-orange-500 transition-colors duration-300" />
                       <input 
                         type="text"
-                        className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 group-hover:border-green-300"
+                        className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 group-hover:border-orange-300"
                         value={formData.address}
                         onChange={(e) => setFormData({...formData, address: e.target.value})}
                         placeholder="Enter your address"
@@ -218,7 +218,7 @@ export default function DonateFood() {
                     <label className="block text-gray-700 font-medium mb-2">Preferred Pickup Time</label>
                     <div className="relative group">
                       <select 
-                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 group-hover:border-green-300"
+                        className="w-full p-4 border-2 border-gray-200 rounded-xl appearance-none focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 group-hover:border-orange-300"
                         value={formData.timeSlot}
                         onChange={(e) => setFormData({...formData, timeSlot: e.target.value})}
                       >
@@ -227,14 +227,14 @@ export default function DonateFood() {
                         <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
                         <option value="evening">Evening (3 PM - 6 PM)</option>
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-green-500 transition-colors duration-300" />
+                      <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-orange-500 transition-colors duration-300" />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-gray-700 font-medium mb-2">Special Instructions</label>
                     <textarea 
-                      className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 hover:border-green-300 h-[104px] resize-none"
+                      className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-orange-500 transition-all duration-300 bg-gray-50 hover:border-orange-300 h-[104px] resize-none"
                       value={formData.instructions}
                       onChange={(e) => setFormData({...formData, instructions: e.target.value})}
                       placeholder="Any special instructions for pickup?"
@@ -246,7 +246,7 @@ export default function DonateFood() {
               <div className="pt-6">
                 <button 
                   type="submit"
-                  className="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-[1.02] hover:shadow-lg flex items-center justify-center space-x-2 text-lg"
+                  className="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-[1.02] hover:shadow-lg flex items-center justify-center space-x-2 text-lg"
                 >
                   <CheckCircle2 className="w-6 h-6" />
                   <span>Submit Donation</span>

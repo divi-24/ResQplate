@@ -124,7 +124,7 @@ function Analytics() {
             <p className="text-sm font-medium text-gray-600">{stat.label}</p>
             <div className="mt-2 flex items-baseline">
               <p className="text-2xl font-semibold text-gray-900">{stat.value}</p>
-              <span className="ml-2 text-sm font-medium text-green-600">
+              <span className="ml-2 text-sm font-medium text-orange-600">
                 {stat.change}
               </span>
             </div>

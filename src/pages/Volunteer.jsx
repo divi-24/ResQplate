@@ -36,7 +36,7 @@ export default function Volunteer() {
             <h1 className="text-5xl font-bold mb-6">Be a Food Hero</h1>
             <p className="text-xl mb-8">Help transport food from donors to those in need.</p>
             <a href="#volunteer-form" 
-               className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 
+               className="inline-flex items-center px-6 py-3 bg-orange-600 hover:bg-orange-700 
                         text-white font-semibold rounded-lg transition-colors">
               Join as a Volunteer
               <ChevronRight className="ml-2 h-5 w-5" />
@@ -51,22 +51,22 @@ export default function Volunteer() {
           <h2 className="text-3xl font-bold text-center mb-16">Why Volunteer With Us?</h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
-                <Heart className="h-8 w-8 text-green-600" />
+              <div className="w-16 h-16 mx-auto mb-6 bg-orange-100 rounded-full flex items-center justify-center">
+                <Heart className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Make an Impact</h3>
               <p className="text-gray-600">Every pickup helps fight hunger in your community.</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
-                <Calendar className="h-8 w-8 text-green-600" />
+              <div className="w-16 h-16 mx-auto mb-6 bg-orange-100 rounded-full flex items-center justify-center">
+                <Calendar className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Flexible Schedule</h3>
               <p className="text-gray-600">Choose your own hours and delivery times.</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
-                <Users className="h-8 w-8 text-green-600" />
+              <div className="w-16 h-16 mx-auto mb-6 bg-orange-100 rounded-full flex items-center justify-center">
+                <Users className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Join a Community</h3>
               <p className="text-gray-600">Connect with others making a difference.</p>
@@ -86,7 +86,7 @@ export default function Volunteer() {
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   value={formData.fullName}
                   onChange={(e) => setFormData({...formData, fullName: e.target.value})}
                 />
@@ -96,7 +96,7 @@ export default function Volunteer() {
                 <input
                   type="email"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                 />
@@ -106,7 +106,7 @@ export default function Volunteer() {
                 <input
                   type="tel"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
                 />
@@ -117,7 +117,7 @@ export default function Volunteer() {
                   type="text"
                   required
                   placeholder="Enter your city/region"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   value={formData.area}
                   onChange={(e) => setFormData({...formData, area: e.target.value})}
                 />
@@ -138,8 +138,8 @@ export default function Volunteer() {
                     onClick={() => setFormData({...formData, transport: label})}
                     className={`p-4 border rounded-lg flex flex-col items-center gap-2 transition-colors
                               ${formData.transport === label 
-                                ? 'border-green-500 bg-green-50 text-green-700' 
-                                : 'border-gray-300 hover:border-green-500'}`}
+                                ? 'border-orange-500 bg-orange-50 text-orange-700' 
+                                : 'border-gray-300 hover:border-orange-500'}`}
                   >
                     <Icon className="h-6 w-6" />
                     <span>{label}</span>
@@ -150,7 +150,7 @@ export default function Volunteer() {
 
             <button
               type="submit"
-              className="w-full py-3 px-6 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
+              className="w-full py-3 px-6 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-colors"
             >
               Submit Application
             </button>
@@ -169,8 +169,8 @@ export default function Volunteer() {
             <div className="divide-y">
               {[1, 2].map((_, i) => (
                 <div key={i} className="p-6 flex items-center gap-6">
-                  <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-8 w-8 text-green-600" />
+                  <div className="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <MapPin className="h-8 w-8 text-orange-600" />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold mb-1">Food Bank Delivery #{i + 1}</h4>
@@ -185,7 +185,7 @@ export default function Volunteer() {
                       </span>
                     </div>
                   </div>
-                  <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                  <button className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors">
                     View Details
                   </button>
                 </div>

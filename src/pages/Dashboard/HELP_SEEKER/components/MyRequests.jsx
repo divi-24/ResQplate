@@ -56,7 +56,7 @@ const RequestCard = ({ request }) => {
   const statusColors = {
     Pending: 'yellow',
     'In Progress': 'blue',
-    Delivered: 'green'
+    Delivered: 'orange'
   };
 
   const color = statusColors[request.status];
