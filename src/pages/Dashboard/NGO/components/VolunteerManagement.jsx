@@ -45,7 +45,7 @@ function VolunteerManagement() {
   const getStatusColor = (status) => {
     switch (status) {
       case 'Available':
-        return 'bg-#f8a723-100 text-#f8a723-800';
+        return 'bg-green-100 text-green-800';
       case 'On Delivery':
         return 'bg-blue-100 text-blue-800';
       case 'Offline':
@@ -59,7 +59,7 @@ function VolunteerManagement() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-semibold text-gray-900">Volunteer Management</h1>
-        <button className="px-4 py-2 bg-#f8a723-600 text-white text-sm font-medium rounded-lg hover:bg-#f8a723-700 transition-colors">
+        <button className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors">
           Add New Volunteer
         </button>
       </div>

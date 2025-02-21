@@ -50,7 +50,7 @@ export const History = () => {
           {mockHistory.map((day) => (
             <div key={day.id} className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center gap-2 mb-4">
-                <Calendar size={20} className="text-#f8a723-600" />
+                <Calendar size={20} className="text-green-600" />
                 <h2 className="text-lg font-semibold">
                   {new Date(day.date).toLocaleDateString('en-US', {
                     weekday: 'long',
@@ -67,15 +67,15 @@ export const History = () => {
                     key={task.id}
                     className="flex items-start gap-4 p-4 rounded-lg bg-gray-50"
                   >
-                    <div className="bg-#f8a723-100 p-2 rounded-lg">
-                      <Package size={24} className="text-#f8a723-600" />
+                    <div className="bg-green-100 p-2 rounded-lg">
+                      <Package size={24} className="text-green-600" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="font-medium text-gray-800">
                           {task.type}: {task.location}
                         </h3>
-                        <span className="text-sm font-medium px-2 py-1 rounded-full bg-#f8a723-100 text-#f8a723-800">
+                        <span className="text-sm font-medium px-2 py-1 rounded-full bg-green-100 text-green-800">
                           {task.status}
                         </span>
                       </div>

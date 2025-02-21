@@ -18,8 +18,8 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
 
       <div className="h-16 px-4 border-b border-gray-200 flex items-center justify-between">
         <div className="flex items-center gap-3 overflow-hidden">
-          <div className="bg-#f8a723-50 p-2 rounded-lg flex-shrink-0">
-            <Leaf className="h-5 w-5 text-#f8a723-600" />
+          <div className="bg-green-50 p-2 rounded-lg flex-shrink-0">
+            <Leaf className="h-5 w-5 text-green-600" />
           </div>
           {!collapsed && (
             <span className="text-lg font-semibold text-gray-800 whitespace-nowrap">
@@ -53,7 +53,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
                     onClick={() => setActiveSection(item.id)}
                     className={`w-full flex items-center px-3 py-2.5 rounded-lg transition-all duration-200
                       ${isActive 
-                        ? 'bg-#f8a723-50 text-#f8a723-600' 
+                        ? 'bg-green-50 text-green-600' 
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                       }
                       ${collapsed ? 'justify-center' : 'justify-start'}
@@ -63,7 +63,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
                       <Icon 
                         size={20} 
                         className={`flex-shrink-0 transition-colors duration-200
-                          ${isActive ? 'text-#f8a723-600' : 'text-gray-400'}`} 
+                          ${isActive ? 'text-green-600' : 'text-gray-400'}`} 
                       />
                       
                       {!collapsed && (
@@ -75,7 +75,7 @@ function Sidebar({ items, activeSection, setActiveSection, collapsed, setCollaps
 
                     {isActive && !collapsed && (
                       <div className="ml-auto">
-                        <div className="h-2 w-2 rounded-full bg-#f8a723-600" />
+                        <div className="h-2 w-2 rounded-full bg-green-600" />
                       </div>
                     )}
                   </button>

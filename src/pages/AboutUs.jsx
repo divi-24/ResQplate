@@ -5,7 +5,7 @@ import Footer from '../components/Homepage/Footer';
 
 const ImpactMetric = ({ icon: Icon, value, label }) => (
   <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
-    <Icon className="w-8 h-8 text-#f8a723-600 mb-2" />
+    <Icon className="w-8 h-8 text-green-600 mb-2" />
     <h3 className="text-3xl font-bold text-gray-800">{value}</h3>
     <p className="text-gray-600">{label}</p>
   </div>
@@ -14,7 +14,7 @@ const ImpactMetric = ({ icon: Icon, value, label }) => (
 const ProcessStep = ({ icon: Icon, title, description }) => (
   <div className="flex items-start space-x-4">
     <div className="flex-shrink-0">
-      <Icon className="w-6 h-6 text-#f8a723-600" />
+      <Icon className="w-6 h-6 text-green-600" />
     </div>
     <div>
       <h3 className="font-semibold text-lg">{title}</h3>
@@ -42,7 +42,7 @@ export default function AboutUs() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             We bridge the gap between surplus food and those in need by connecting donors, NGOs, and volunteers.
           </p>
-          <button className="bg-#f8a723-600 hover:bg-#f8a723-700 text-white px-8 py-3 rounded-full font-semibold flex items-center mx-auto">
+          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold flex items-center mx-auto">
             Join Us <ArrowRight className="ml-2 w-5 h-5" />
           </button>
         </div>
@@ -55,14 +55,14 @@ export default function AboutUs() {
             <h2 className="text-3xl font-bold mb-12 text-gray-800">Our Mission & Vision</h2>
             <div className="grid gap-12">
               <div>
-                <Leaf className="w-12 h-12 text-#f8a723-600 mx-auto mb-4" />
+                <Leaf className="w-12 h-12 text-green-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Mission</h3>
                 <p className="text-gray-600">
                   Our mission is to eliminate food waste by efficiently redistributing surplus food to communities in need, ensuring no one goes hungry.
                 </p>
               </div>
               <div>
-                <Heart className="w-12 h-12 text-#f8a723-600 mx-auto mb-4" />
+                <Heart className="w-12 h-12 text-green-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Vision</h3>
                 <p className="text-gray-600">
                   A world where surplus food is efficiently utilized to nourish those in need, creating a sustainable and hunger-free future.

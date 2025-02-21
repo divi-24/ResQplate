@@ -49,7 +49,7 @@ const StatCard = ({ title, value, icon: Icon, trend, color = 'indigo' }) => (
         <p className="text-sm font-medium text-gray-600">{title}</p>
         <p className="text-2xl font-semibold mt-2">{value}</p>
         {trend && (
-          <p className="text-sm text-#f8a723-600 mt-2 flex items-center">
+          <p className="text-sm text-green-600 mt-2 flex items-center">
             <TrendingUp className="w-4 h-4 mr-1" />
             {trend}
           </p>
@@ -69,8 +69,8 @@ const LastDonationCard = ({ donation }) => (
       <button className="btn btn-secondary text-sm">View All</button>
     </div>
     <div className="flex items-start space-x-4">
-      <div className="p-3 bg-#f8a723-50 rounded-xl">
-        <Package className="w-6 h-6 text-#f8a723-600" />
+      <div className="p-3 bg-green-50 rounded-xl">
+        <Package className="w-6 h-6 text-green-600" />
       </div>
       <div className="flex-1">
         <div className="flex items-center justify-between">
@@ -172,7 +172,7 @@ export default function DashboardOverview() {
           title="Delivered Requests"
           value={stats.deliveredRequests}
           icon={CheckCircle}
-          color="#f8a723"
+          color="green"
         />
         <StatCard
           title="Total Meals Received"

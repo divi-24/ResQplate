@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Logo & Brand Identity */}
           <div className="space-y-4">
             <h2 className="text-2xl font-bold">ResQplate            </h2>
-            <p className="text-sm text-#f8a723-100">Reduce Waste, Feed Lives</p>
+            <p className="text-sm text-green-100">Reduce Waste, Feed Lives</p>
             <p className="text-sm mt-4">
               Our mission is to eliminate food waste by connecting donors with those in need
             </p>
@@ -44,7 +44,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-#f8a723-100 hover:text-primary-dark transition-colors duration-300"
+                      className="text-green-100 hover:text-primary-dark transition-colors duration-300"
                     >
                       {link}
                     </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-#f8a723-100 hover:text-primary-dark transition-colors duration-300"
+                      className="text-green-100 hover:text-primary-dark transition-colors duration-300"
                     >
                       {link}
                     </a>
@@ -74,19 +74,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
-                <FaEnvelope className="text-#f8a723-100" />
-                <a href="mailto:info@foodsaver.com" className="hover:text-#f8a723-100 transition-colors duration-300">
+                <FaEnvelope className="text-green-100" />
+                <a href="mailto:info@foodsaver.com" className="hover:text-green-100 transition-colors duration-300">
                   info@foodsaver.com
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <FaPhone className="text-#f8a723-100" />
-                <a href="tel:+1234567890" className="hover:text-#f8a723-100 transition-colors duration-300">
+                <FaPhone className="text-green-100" />
+                <a href="tel:+1234567890" className="hover:text-green-100 transition-colors duration-300">
                   (123) 456-7890
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <FaMapMarkerAlt className="text-#f8a723-100" />
+                <FaMapMarkerAlt className="text-green-100" />
                 <span>123 Food Street, City, State 12345</span>
               </li>
             </ul>
@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="mt-8 py-4 border-t border-#f8a723-100/20">
+        <div className="mt-8 py-4 border-t border-green-100/20">
           <div className="flex justify-center space-x-6">
             {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube, FaPinterest].map((Icon, index) => (
               <a
@@ -137,7 +137,7 @@ const Footer = () => {
               <a
                 key={link}
                 href="#"
-                className="text-white hover:text-#f8a723-100 transition-colors duration-300"
+                className="text-white hover:text-green-100 transition-colors duration-300"
               >
                 {link}
               </a>

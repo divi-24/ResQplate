@@ -98,7 +98,7 @@ export default function NGODashboard() {
               <div className="flex items-center gap-8">
                 <button className="relative p-2 text-gray-600 hover:text-gray-900">
                   <Bell size={20} />
-                  <span className="absolute top-1 right-1 w-2 h-2 bg-#f8a723-500 rounded-full"></span>
+                  <span className="absolute top-1 right-1 w-2 h-2 bg-green-500 rounded-full"></span>
                 </button>
                 
                 <div className="flex items-center gap-2">

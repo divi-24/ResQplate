@@ -32,7 +32,7 @@ export function Volunteers() {
               <td className="px-6 py-4">mike@example.com</td>
               <td className="px-6 py-4">Downtown</td>
               <td className="px-6 py-4">
-                <span className="px-2 py-1 bg-#f8a723-100 text-#f8a723-800 rounded-full text-sm">
+                <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
                   Active
                 </span>
               </td>

@@ -8,10 +8,10 @@ const StatCard = ({ icon: Icon, title, value, bgColor }) => (
   <div className={`${bgColor} p-6 rounded-lg shadow-lg`}>
     <div className="flex items-center justify-between">
       <div>
-        <p className="text-sm text-#f8a723-100 mb-1">{title}</p>
+        <p className="text-sm text-green-100 mb-1">{title}</p>
         <p className="text-2xl font-bold text-white">{value}</p>
       </div>
-      <Icon className="h-8 w-8 text-#f8a723-100" />
+      <Icon className="h-8 w-8 text-green-100" />
     </div>
   </div>
 );
@@ -38,25 +38,25 @@ const DashboardStats = () => {
         icon={Package}
         title="Total Donations"
         value={donations.length}
-        bgColor="bg-#f8a723-600"
+        bgColor="bg-green-600"
       />
       <StatCard
         icon={Clock}
         title="Pending Donations"
         value={donations.filter(donation => donation.donationStatus === 'AVAILABLE').length}
-        bgColor="bg-#f8a723-700"
+        bgColor="bg-green-700"
       />
       <StatCard
         icon={CheckCircle}
         title="Completed Donations"
         value={donations.filter(donation => donation.donationStatus === 'DELIVERED').length}
-        bgColor="bg-#f8a723-600"
+        bgColor="bg-green-600"
       />
       <StatCard
         icon={Calendar}
         title="This Month"
         value={donations.filter(donation => new Date(donation.createdAt).getMonth() === new Date().getMonth()).length}
-        bgColor="bg-#f8a723-700"
+        bgColor="bg-green-700"
       />
     </div>
   );

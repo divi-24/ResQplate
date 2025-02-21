@@ -89,7 +89,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-#f8a723-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+          <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
             Get Started Now
           </button>
         </div>

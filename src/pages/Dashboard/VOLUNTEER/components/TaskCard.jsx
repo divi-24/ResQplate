@@ -6,7 +6,7 @@ export const TaskCard = ({ task }) => {
   const statusColors = {
     pending: 'bg-yellow-100 text-yellow-800',
     in_progress: 'bg-blue-100 text-blue-800',
-    completed: 'bg-#f8a723-100 text-#f8a723-800',
+    completed: 'bg-green-100 text-green-800',
   };
 
   return (
@@ -53,7 +53,7 @@ export const TaskCard = ({ task }) => {
       </div>
 
       <div className="mt-4 flex gap-2">
-        <button className="flex-1 bg-#f8a723-600 text-white py-2 rounded-lg hover:bg-#f8a723-700 transition-colors">
+        <button className="flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-colors">
           Accept
         </button>
         <button className="flex-1 border border-gray-300 py-2 rounded-lg hover:bg-gray-50 transition-colors">

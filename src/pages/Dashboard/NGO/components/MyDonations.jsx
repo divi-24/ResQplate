@@ -42,7 +42,7 @@ function MyDonations() {
       case 'In Transit':
         return 'bg-blue-100 text-blue-800';
       case 'Delivered':
-        return 'bg-#f8a723-100 text-#f8a723-800';
+        return 'bg-green-100 text-green-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }
@@ -117,7 +117,7 @@ function MyDonations() {
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <div className="flex space-x-2">
                       {donation.status === 'Pending Pickup' && (
-                        <button className="inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded-md text-white bg-#f8a723-600 hover:bg-#f8a723-700">
+                        <button className="inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
                           <Truck className="w-4 h-4 mr-1" />
                           Mark Picked Up
                         </button>

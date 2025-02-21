@@ -65,7 +65,7 @@ export const Messages = () => {
             <input
               type="text"
               placeholder="Search messages..."
-              className="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
+              className="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
             <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
           </div>
@@ -77,11 +77,11 @@ export const Messages = () => {
               key={chat.id}
               onClick={() => setSelectedChat(chat)}
               className={`p-4 cursor-pointer hover:bg-gray-50 ${
-                selectedChat.id === chat.id ? 'bg-#f8a723-50' : ''
+                selectedChat.id === chat.id ? 'bg-green-50' : ''
               }`}
             >
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-#f8a723-100 flex items-center justify-center text-#f8a723-600 font-medium">
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-medium">
                   {chat.avatar}
                 </div>
                 <div className="flex-1">
@@ -92,7 +92,7 @@ export const Messages = () => {
                   <p className="text-sm text-gray-600 truncate">{chat.lastMessage}</p>
                 </div>
                 {chat.unread > 0 && (
-                  <span className="bg-#f8a723-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="bg-green-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                     {chat.unread}
                   </span>
                 )}
@@ -107,7 +107,7 @@ export const Messages = () => {
         {/* Chat Header */}
         <div className="bg-white p-4 border-b">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-#f8a723-100 flex items-center justify-center text-#f8a723-600 font-medium">
+            <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-medium">
               {selectedChat.avatar}
             </div>
             <div>
@@ -127,13 +127,13 @@ export const Messages = () => {
               <div
                 className={`max-w-[70%] rounded-lg p-3 ${
                   message.isSender
-                    ? 'bg-#f8a723-500 text-white'
+                    ? 'bg-green-500 text-white'
                     : 'bg-white text-gray-800'
                 }`}
               >
                 <p>{message.content}</p>
                 <p className={`text-xs mt-1 ${
-                  message.isSender ? 'text-#f8a723-100' : 'text-gray-500'
+                  message.isSender ? 'text-green-100' : 'text-gray-500'
                 }`}>
                   {message.time}
                 </p>
@@ -150,9 +150,9 @@ export const Messages = () => {
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-#f8a723-500"
+              className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
-            <button className="p-2 rounded-lg bg-#f8a723-500 text-white hover:bg-#f8a723-600">
+            <button className="p-2 rounded-lg bg-green-500 text-white hover:bg-green-600">
               <Send size={20} />
             </button>
           </div>

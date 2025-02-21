@@ -74,14 +74,14 @@ function Settings() {
       <Navigation />
       <div className="max-w-3xl mx-auto pt-8">
         <header className="mb-8">
-          <h1 className="text-3xl font-bold text-#f8a723-800">Settings</h1>
+          <h1 className="text-3xl font-bold text-green-800">Settings</h1>
           <p className="text-gray-600 mt-2">Manage your account preferences and notifications.</p>
         </header>
 
         <div className="bg-white rounded-lg shadow-lg p-6 space-y-4">
           <div className="flex items-center gap-2 mb-4">
-            <User className="h-5 w-5 text-#f8a723-600" />
-            <h2 className="text-xl font-semibold text-#f8a723-800">Profile Information</h2>
+            <User className="h-5 w-5 text-green-600" />
+            <h2 className="text-xl font-semibold text-green-800">Profile Information</h2>
           </div>
           <form className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -114,7 +114,7 @@ function Settings() {
             <button
               type="button"
               onClick={handleUpdateProfile}
-              className="bg-#f8a723-600 text-white px-4 py-2 rounded-lg hover:bg-#f8a723-700"
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
               disabled={loading}
             >
               {loading ? 'Saving...' : 'Save Changes'}

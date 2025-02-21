@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <>
          <div className="relative bg-white pt-20">
-      <div className="absolute inset-0 bg-gradient-to-r from-#f8a723-50 to-#f8a723-100 h-3/4" />
+      <div className="absolute inset-0 bg-gradient-to-r from-green-50 to-green-100 h-3/4" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -28,10 +28,10 @@ const Hero = () => {
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-#f8a723-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Donate Food Now
               </button>
-              <button className="px-8 py-4 bg-white text-primary border-2 border-primary rounded-lg font-medium hover:bg-#f8a723-50 transition-colors">
+              <button className="px-8 py-4 bg-white text-primary border-2 border-primary rounded-lg font-medium hover:bg-green-50 transition-colors">
                 Become a Volunteer
               </button>
             </div>
@@ -49,7 +49,7 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-#f8a723-400 to-#f8a723-500 rounded-3xl transform rotate-3 scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-500 rounded-3xl transform rotate-3 scale-105" />
             <img
               className="relative rounded-3xl shadow-2xl"
               src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
