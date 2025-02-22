@@ -30,7 +30,7 @@ export default function AboutUs() {
       <div 
         className="relative h-screen flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80")',
+          Image: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

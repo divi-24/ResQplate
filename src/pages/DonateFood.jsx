@@ -63,7 +63,7 @@ export default function DonateFood() {
       <div 
         className="relative min-h-screen flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
+          backgroundImage: 'url("https://t3.ftcdn.net/jpg/08/29/62/66/360_F_829626678_muiDkvVmAPAeskXBOmGIdqQNiwpbUYTw.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -134,7 +134,7 @@ export default function DonateFood() {
                 <p className="text-gray-600">{step.desc}</p>
                 {index < 3 && (
                   <div className="hidden md:block absolute top-1/2 left-0 w-full" style={{ transform: 'translateY(-50%)' }}>
-                    <div className="border-t-2 border-green-200 w-full" style={{ margin: '0 15%' }}></div>
+                    
                   </div>
                 )}
               </div>

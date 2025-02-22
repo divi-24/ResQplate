@@ -20,20 +20,20 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-dark sm:text-5xl md:text-6xl lg:leading-tight">
-              <span className="block">Reducing Food Waste,</span>
-              <span className="block text-primary">Feeding Communities</span>
+              <span className="block"> Rescuing Surplus Food,</span>
+              <span className="block text-primary"> Building a Sustainable Future</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
               Join thousands of donors and volunteers in our mission to reduce food waste and support those in need. Every meal saved is a step towards a sustainable and hunger-free future.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <a href='/donate-food'><button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Donate Food Now
-              </button>
-              <button className="px-8 py-4 bg-white text-primary border-2 border-primary rounded-lg font-medium hover:bg-green-50 transition-colors">
+              </button></a>
+              <a href='/volunteer'><button className="px-8 py-4 bg-white text-primary border-2 border-primary rounded-lg font-medium hover:bg-green-50 transition-colors">
                 Become a Volunteer
-              </button>
+              </button></a>
             </div>
 
             <div className="mt-12">
@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-500 rounded-3xl transform rotate-3 scale-105" />
             <img
               className="relative rounded-3xl shadow-2xl"
-              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              src="https://www.shutterstock.com/image-photo/assorted-fresh-ripe-fruits-vegetables-600nw-770613370.jpg"
               alt="Food donation"
             />
           </div>

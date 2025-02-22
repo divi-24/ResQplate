@@ -1,3 +1,4 @@
+import { Link } from 'lucide-react';
 import React from 'react'
 
 const HowItWorks = () => {
@@ -10,8 +11,9 @@ const HowItWorks = () => {
             "Quick registration process",
             "Role-specific profiles",
             "Verification system",
-            "Preference settings"
-          ]
+            "Preference settings",
+          ],
+          link: "/signin"
         },
         {
           title: "List or Request Food",
@@ -89,9 +91,9 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+          <a href='/signin'><button className="px-8 py-4 bg-primary text-white rounded-lg font-medium hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
             Get Started Now
-          </button>
+          </button></a>
         </div>
       </div>
     </div>
