@@ -30,7 +30,7 @@ export default function AboutUs() {
       <div 
         className="relative h-screen flex items-center justify-center"
         style={{
-          Image: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -42,9 +42,9 @@ export default function AboutUs() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             We bridge the gap between surplus food and those in need by connecting donors, NGOs, and volunteers.
           </p>
-          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold flex items-center mx-auto">
+          <a href="./signin"><button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold flex items-center mx-auto">
             Join Us <ArrowRight className="ml-2 w-5 h-5" />
-          </button>
+          </button></a>
         </div>
       </div>
 

@@ -20,9 +20,11 @@ import DashboardOverview from './components/DashboardOverview';
 import AvailableDonations from './components/AvailableDonations';
 import MyDonations from './components/MyDonations';
 import VolunteerManagement from './components/VolunteerManagement';
+// import Settings from './components/Settings';
 import Analytics from './components/Analytics';
 import { useAuth } from '../../../context/AuthContext';
 import Swal from 'sweetalert2';
+import { settings } from 'firebase/analytics';
 
 export default function NGODashboard() {
     const auth = useAuth();
@@ -36,7 +38,7 @@ export default function NGODashboard() {
     { id: 'mydonations', label: 'My Donations', icon: HandHeart },
     { id: 'volunteers', label: 'Volunteer Management', icon: Users },
     { id: 'analytics', label: 'Analytics', icon: BarChart2 },
-    { id: 'settings', label: 'Settings', icon: Settings },
+    // { id: 'settings', label: 'Settings', icon: Settings },
   ];
 
   const renderContent = () => {
@@ -51,6 +53,8 @@ export default function NGODashboard() {
         return <VolunteerManagement />;
       case 'analytics':
         return <Analytics />;
+        // case 'settings':
+        //   return <Settings />;  
       default:
         return <DashboardOverview />;
     }

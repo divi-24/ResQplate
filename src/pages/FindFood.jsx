@@ -70,12 +70,12 @@ export default function FindFood() {
             <h1 className="text-6xl font-bold mb-6 leading-tight">Find Food Near You</h1>
             <p className="text-2xl mb-10 text-gray-200">We connect those in need with surplus food from donors. Join our mission to reduce food waste and help communities thrive.</p>
             <div className="flex gap-4">
-              <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+              <a href='#listing'><button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
                 Request Food
-              </button>
-              <button className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+              </button></a>
+              <a href='./donate-food#donate-form'><button className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
                 Become a Donor
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function FindFood() {
         </div>
 
         {/* Food Listings */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div id="listing" className="grid md:grid-cols-2 gap-8">
           {foodItems.map((item) => (
             <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="flex">
