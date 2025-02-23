@@ -25,7 +25,7 @@ export default function Volunteer() {
       <div className="relative h-[600px]">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80"
+            src="https://img.freepik.com/premium-photo/food-donation-drive-with-volunteers-distributing-meals_1274999-2685.jpg"
             alt="Volunteer delivering food"
             className="w-full h-full object-cover"
           />

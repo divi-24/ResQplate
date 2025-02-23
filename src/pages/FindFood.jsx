@@ -115,7 +115,7 @@ export default function FindFood() {
       <div className="relative h-[600px]">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80"
+            src="https://img.freepik.com/premium-photo/design-aipowered-app-reduce-food-waste-households_1303487-795.jpg"
             alt="Food Distribution"
             className="w-full h-full object-cover"
           />

@@ -30,7 +30,7 @@ export default function AboutUs() {
       <div 
         className="relative h-screen flex items-center justify-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80")',
+          backgroundImage: 'url("https://img.freepik.com/premium-photo/top-view-restaurant-kitchen-waste-bin-filled-with-halfeaten-meals-discarded-ingredients_275780-4840.jpg?ga=GA1.1.743509702.1740303654&semt=ais_hybrid")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
