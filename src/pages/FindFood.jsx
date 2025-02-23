@@ -9,48 +9,104 @@ export default function FindFood() {
   const [distance, setDistance] = useState('10');
 
   const foodItems = [
-    {
-      id: 1,
-      donor: "Fresh Foods Market",
-      type: "Vegetables & Fruits",
-      quantity: "50 lbs",
-      address: "123 Main St, Downtown",
-      pickupTime: "9 AM - 5 PM",
-      category: "Vegetarian",
-      rating: 4.8,
-      phone: "(555) 123-4567",
-      email: "freshfoods@example.com",
-      image: "https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&q=80&w=500",
-      tags: ["Organic", "Fresh", "Local"]
-    },
-    {
-      id: 2,
-      donor: "City Bakery",
-      type: "Bread & Pastries",
-      quantity: "30 items",
-      address: "456 Oak Ave, Westside",
-      pickupTime: "3 PM - 6 PM",
-      category: "Non-Perishable",
-      rating: 4.5,
-      phone: "(555) 987-6543",
-      email: "citybakery@example.com",
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=500",
-      tags: ["Baked Daily", "Artisan"]
-    },
-    {
-      id: 3,
-      donor: "green Garden Co-op",
-      type: "Mixed Produce",
-      quantity: "75 lbs",
-      address: "789 Pine St, Eastside",
-      pickupTime: "10 AM - 2 PM",
-      category: "Vegetarian",
-      rating: 4.9,
-      phone: "(555) 456-7890",
-      email: "greengarden@example.com",
-      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=500",
-      tags: ["Organic", "Seasonal", "Local"]
-    }
+      {
+        "id": 4,
+        "donor": "Amrit Organic Farms",
+        "type": "Vegetables & Fruits",
+        "quantity": "60 kg",
+        "address": "12 MG Road, Delhi",
+        "pickupTime": "7 AM - 3 PM",
+        "category": "Vegetarian",
+        "rating": 4.8,
+        "phone": "+91 98765 43210",
+        "email": "amritfarms@example.com",
+        "image": "https://images.unsplash.com/photo-1582515073490-39981397c445?auto=format&fit=crop&q=80&w=500",
+        "tags": ["Organic", "Farm Fresh", "Seasonal"]
+      },
+      {
+        "id": 5,
+        "donor": "Mumbai Tiffin Center",
+        "type": "Cooked Meals",
+        "quantity": "100 lunch boxes",
+        "address": "Goregaon, Mumbai",
+        "pickupTime": "12 PM - 3 PM",
+        "category": "Cooked Meals",
+        "rating": 4.7,
+        "phone": "+91 99876 54321",
+        "email": "mumbaitiffin@example.com",
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=500",
+        "tags": ["Homemade", "Nutritious"]
+      },
+      {
+        "id": 6,
+        "donor": "Punjab Dairy Farm",
+        "type": "Dairy Products",
+        "quantity": "25 liters of milk",
+        "address": "Sector 22, Chandigarh",
+        "pickupTime": "6 AM - 10 AM",
+        "category": "Perishable",
+        "rating": 4.9,
+        "phone": "+91 90909 80808",
+        "email": "punjabdairy@example.com",
+        "image": "",
+        "tags": ["Fresh", "Organic", "Pure"]
+      },
+      {
+        "id": 7,
+        "donor": "Chennai Bakery House",
+        "type": "Bread & Pastries",
+        "quantity": "50 items",
+        "address": "Anna Nagar, Chennai",
+        "pickupTime": "4 PM - 7 PM",
+        "category": "Non-Perishable",
+        "rating": 4.6,
+        "phone": "+91 88776 66554",
+        "email": "chennaibakery@example.com",
+        "image": "https://images.unsplash.com/photo-1608198093002-8b44d1a1914e?auto=format&fit=crop&q=80&w=500",
+        "tags": ["Freshly Baked", "Handmade"]
+      },
+      {
+        "id": 8,
+        "donor": "Hyderabad Spices & Grains",
+        "type": "Rice & Pulses",
+        "quantity": "100 kg",
+        "address": "Banjara Hills, Hyderabad",
+        "pickupTime": "9 AM - 6 PM",
+        "category": "Non-Perishable",
+        "rating": 4.8,
+        "phone": "+91 77665 44332",
+        "email": "hyderabadspices@example.com",
+        "image": "https://images.unsplash.com/photo-1556912173-3bb406ef7b34?auto=format&fit=crop&q=80&w=500",
+        "tags": ["High Quality", "Long Shelf Life"]
+      },
+      {
+        "id": 9,
+        "donor": "Bengaluru Fresh Eggs",
+        "type": "Eggs",
+        "quantity": "150 dozen",
+        "address": "Whitefield, Bengaluru",
+        "pickupTime": "5 AM - 9 AM",
+        "category": "Perishable",
+        "rating": 4.7,
+        "phone": "+91 66554 33221",
+        "email": "bengalurueggs@example.com",
+        "image": "https://images.unsplash.com/photo-1568641226375-2e6ab119e9bb?auto=format&fit=crop&q=80&w=500",
+        "tags": ["Farm Fresh", "Organic"]
+      },
+      {
+        "id": 10,
+        "donor": "Kolkata Street Kitchen",
+        "type": "Prepared Meals",
+        "quantity": "80 food packets",
+        "address": "New Market, Kolkata",
+        "pickupTime": "6 PM - 9 PM",
+        "category": "Cooked Meals",
+        "rating": 4.9,
+        "phone": "+91 55443 22110",
+        "email": "kolkatastreetfood@example.com",
+        "image": "https://images.unsplash.com/photo-1627308595049-61c5412f5115?auto=format&fit=crop&q=80&w=500",
+        "tags": ["Traditional", "Authentic", "Spicy"]
+      }
   ];
 
   return (

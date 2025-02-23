@@ -50,10 +50,19 @@ export default function DonateFood() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_API}/api/v1/fooddonation/donate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: "Hello, MongoDB!" }), // Data being sent
+      });
+  
+      const data = await response.json();
+      console.log("Response:", data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -244,7 +253,7 @@ export default function DonateFood() {
               </div>
 
               <div className="pt-6">
-                <button 
+                <button onClick={handleSubmit}
                   type="submit"
                   className="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-[1.02] hover:shadow-lg flex items-center justify-center space-x-2 text-lg"
                 >
